@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    text-decoration-line: none;
+    
+}
+a{
+    color: inherit;
+}
+main{
+    max-width: 1280px;
+    margin-inline: auto;
+    animation: shimmer 0.1s  linear;
+}
+.back-btn{
+    display: inline-block;
+    margin-top: 50px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 8px 25px;
+    border-radius: 4px;
+     
+}
+.country-details{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-top:30px;
+}
+.country-details img{
+    width: 40%;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.side-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 60px;
+    /* max-height: 180px; */
+    flex-wrap: wrap;
+}
+.side-text p{
+     margin: 0;
+}
+ 
+.border-countries a{
+    border: 1px solid gray;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 3px 25px;
+    border-radius: 4px;
+    margin-inline: 5px;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 4px;
+}
+.side-text span{
+    font-size: 15px;
+}
+.border-countries{
+    margin-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.country-container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* @media (max-width: 800px){
+    .side-text{
+        display: block;
+        max-height: unset;
+    }
+    .side-text p{
+        margin: 16px;
+    }
+    
+    .country-details img{
+         width: 100%;
+    }
+    .back-btn{
+        padding: 8px 18px;
+        margin-top: 10px; 
+    }
+    .border-countries{
+        margin-top: 65px;
+    }
+    .border-countries b{
+        display: block;
+        margin-bottom: 10px;
+    }
+     
+} */
+
+@media (max-width: 840px){
+    .country-details{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 16px;
+    }
+    .side-text{
+        max-height: unset;
+    }
+    .country-details img{
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@keyframes shimmer{
+    from {
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(200%);
+    }
+}
